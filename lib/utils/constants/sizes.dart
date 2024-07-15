@@ -20,7 +20,7 @@ class TSizes {
 
   // Button sizes
   static const double buttonHeight = 18.0;
-  static const double buttonRadius = 12.0;
+  static const double buttonRadius = 0.0;
   static const double buttonWidth = 120.0;
   static const double buttonElevation = 4.0;
 
@@ -39,6 +39,7 @@ class TSizes {
   static const double borderRadiusSm = 4.0;
   static const double borderRadiusMd = 8.0;
   static const double borderRadiusLg = 12.0;
+  static const double borderRadiusXl = 30.0;
 
   // Divider height
   static const double dividerHeight = 1.0;

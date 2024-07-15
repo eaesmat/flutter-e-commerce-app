@@ -5,6 +5,7 @@ import 'package:t_store/features/auth/widgets/login_widgets/login_divider.dart';
 import 'package:t_store/features/auth/widgets/login_widgets/login_form.dart';
 import 'package:t_store/features/auth/widgets/login_widgets/login_header.dart';
 import 'package:t_store/features/auth/widgets/login_widgets/login_social_button.dart';
+import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
 
@@ -27,7 +28,15 @@ class LoginScreen extends StatelessWidget {
             TFormDivider(dividerText: TTexts.orSignInWith.capitalize!),
             const SizedBox(height: TSizes.spaceBtwSections),
             // Footer
-            const TFormSocialButton()
+            const TFormSocialButton(
+              btnTitle: TTexts.loginWithGoogle,
+              btnIcon: TImages.google,
+            ),
+            const SizedBox(height: TSizes.spaceBtwItems),
+            const TFormSocialButton(
+              btnTitle: TTexts.loginWithFacebook,
+              btnIcon: TImages.facebook,
+            ),
           ],
         ),
       ),
