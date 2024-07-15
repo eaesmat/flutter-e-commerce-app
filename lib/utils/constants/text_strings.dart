@@ -45,6 +45,9 @@ class TTexts {
 
   // -- Authentication Headings
   static const String loginTitle = "Welcome back,";
+  static const String login = "Log in";
+  static const String loginWithGoogle = "Sign in with Google";
+  static const String loginWithFacebook = "Sign in with Facebook";
   static const String loginSubTitle = "Discover Limitless Choices and Unmatched Convenience.";
   static const String signupTitle = "Let’s create your account";
   static const String forgetPasswordTitle = "Forget password";

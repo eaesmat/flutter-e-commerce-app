@@ -1,53 +1,34 @@
-
 import 'package:flutter/material.dart';
-import 'package:t_store/utils/constants/colors.dart';
-import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 
 class TFormSocialButton extends StatelessWidget {
+  final String btnIcon;
+  final String btnTitle;
   const TFormSocialButton({
     super.key,
+    required this.btnIcon,
+    required this.btnTitle,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: TColors.grey,
+    return SizedBox(
+      width: double.infinity,
+      child: OutlinedButton(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image(
+              height: TSizes.xl,
+              image: AssetImage(
+                btnIcon,
+              ),
             ),
-            borderRadius: BorderRadius.circular(100),
-          ),
-          child: IconButton(
-            onPressed: () {},
-            icon: const Image(
-              width: TSizes.iconMd,
-              height: TSizes.iconMd,
-              image: AssetImage(TImages.google),
-            ),
-          ),
+            Text(btnTitle),
+          ],
         ),
-        const SizedBox(width: TSizes.spaceBtwItems),
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: TColors.grey,
-            ),
-            borderRadius: BorderRadius.circular(100),
-          ),
-          child: IconButton(
-            onPressed: () {},
-            icon: const Image(
-              width: TSizes.iconMd,
-              height: TSizes.iconMd,
-              image: AssetImage(TImages.facebook),
-            ),
-          ),
-        ),
-      ],
+        onPressed: () {},
+      ),
     );
   }
 }

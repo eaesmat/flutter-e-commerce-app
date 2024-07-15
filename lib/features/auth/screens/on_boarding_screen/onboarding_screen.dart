@@ -4,6 +4,7 @@ import 'package:t_store/features/auth/controller/onboarding_controller.dart';
 import 'package:t_store/features/auth/widgets/on_boarding_widgets/on_boarding_dot_navigation.dart';
 import 'package:t_store/features/auth/widgets/on_boarding_widgets/on_boarding_next_button.dart';
 import 'package:t_store/features/auth/widgets/on_boarding_widgets/on_boarding_page.dart';
+import 'package:t_store/features/auth/widgets/on_boarding_widgets/on_boarding_prev_button.dart';
 import 'package:t_store/features/auth/widgets/on_boarding_widgets/on_boarding_skip_button.dart';
 import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/text_strings.dart';
@@ -46,7 +47,8 @@ class OnBoardingScreen extends StatelessWidget {
           // onBoarding page indicator
           const OnBoardingDotNavigation(),
           //  Next Circular button
-          const OnBoardingNextButton()
+          const OnBoardingNextButton(),
+          const OnBoardingPrevButton(),
         ],
       ),
     );

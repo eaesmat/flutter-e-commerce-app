@@ -5,6 +5,7 @@ import 'package:t_store/utils/theme/widget_themes/checkbox_theme.dart';
 import 'package:t_store/utils/theme/widget_themes/chip_theme.dart';
 import 'package:t_store/utils/theme/widget_themes/elevated_button_theme.dart';
 import 'package:t_store/utils/theme/widget_themes/outlined_button_theme.dart';
+import 'package:t_store/utils/theme/widget_themes/text_button_theme.dart';
 import 'package:t_store/utils/theme/widget_themes/text_field_theme.dart';
 import 'package:t_store/utils/theme/widget_themes/text_theme.dart';
 
@@ -28,6 +29,7 @@ class TAppTheme {
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
+    textButtonTheme: TTextButtonTheme.lighTTextButtonTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -45,5 +47,7 @@ class TAppTheme {
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
     inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
+        textButtonTheme: TTextButtonTheme.darkTextButtonTheme,
+
   );
 }
